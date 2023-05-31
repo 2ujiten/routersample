@@ -1,0 +1,22 @@
+
+<div>
+    <p *ngFor="let e of empArray"> Employee Id : {{ e.empId }}
+      <!-- Path Param -->
+      <!-- <a routerLink="/employee/{{e.empId}}">Details</a> -->
+  
+      <!-- Path Param using Property Binding-->
+      <!-- <a [routerLink]="['/employee', e.empId]">Details</a> -->
+  
+      <!-- Using Path Param and Query Param -->
+      <a [routerLink]="['/employee', e.empId]" [queryParams]="{empid: e.empId}">Details</a>
+    </p>
+  </div>
+  <hr>
+  <router-outlet></router-outlet>
+  <hr>
+  <div>
+    <button (click)="goHome()">Home</button>
+  </div>
+  
+  
+  
