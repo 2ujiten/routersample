@@ -1,6 +1,7 @@
 # Routersample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+On building of this project it creates an Angular Element which can be used in any UI framework application.
 
 ## Development server
 
